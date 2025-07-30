@@ -28,6 +28,7 @@ fn main() {
     raster::save(&image, "image.png").unwrap();
 }
 
+// We define diplayable Trait for image (slef will be an instance of an Image -from raster crate).
 impl Displayable for Image {
     fn display(&mut self, x: i32, y: i32, color: Color) {
         if x >= 0 && x < self.width && y >= 0 && y < self.height {
