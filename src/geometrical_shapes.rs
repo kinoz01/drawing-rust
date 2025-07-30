@@ -143,7 +143,7 @@ impl Drawable for Circle {
             for (px, py) in [
                 (cx+x,cy+y),(cx+y,cy+x),(cx-y,cy+x),(cx-x,cy+y),
                 (cx-x,cy-y),(cx-y,cy-x),(cx+y,cy-x),(cx+x,cy-y),
-            ] { img.display(px, py, self.col.clone()); }
+            ] { img.display(px, py, self.col); }
             y += 1;
             if d < 0 { d += 2*y + 1; } else { x -= 1; d += 2*(y - x) + 1; }
         }
