@@ -79,7 +79,7 @@ pub struct Triangle { a: Point, b: Point, c: Point, col: Color }
 
 impl Triangle {
     pub fn new(a: &Point, b: &Point, c: &Point) -> Self {
-        Self { a: a, b: b, c: c, col: Triangle::color() }
+        Self { a: a.clone(), b: b.clone(), c: c.clone(), col: Triangle::color() }
     }
 }
 
