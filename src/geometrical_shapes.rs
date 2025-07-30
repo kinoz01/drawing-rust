@@ -124,7 +124,7 @@ pub struct Circle { c: Point, r: i32, col: Color }
 
 impl Circle {
     pub fn new(c: Point, r: i32) -> Self {
-        Self { c: c, r, col: Circle::color() }
+        Self { c, r, col: Circle::color() }
     }
     pub fn random(w: i32, h: i32) -> Self {
         let mut g = rand::thread_rng();
